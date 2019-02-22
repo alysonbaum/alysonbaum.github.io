@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: #AED581;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 1px;
+}
+
+header li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 17px;
+    color: beige !important;
+}
+
+.subheader {
+    background-color: #7DA453;
+}
+
+.subheader ul {
+    margin-top: 5px;
+    padding: 7px;
+}
+
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.main {
+    background-color: #E6E6E6;
+    text-align: center;
+    padding: 1px 20px;
+}
+
+#courses {
+    display: flex;
+    width: 40%;
+    margin: auto;
+}
+
+#courses ul {
+    margin: auto;
+    padding: 0px;
+}
+
+#about_me {
+    display: flex;
+}
+
+#about_me p {
+    padding: 10px;
+}
