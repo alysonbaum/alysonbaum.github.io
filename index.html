@@ -6,15 +6,18 @@
   <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 <body>
-    <!-- To create a jump-to navigation type bar -->
+    <!-- Obtained from LinkedIn to display profile badge -->
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    
     <header>
         <h1>Alyson Baumgardner</h1>
+<!--For jumping to specific parts of the page and formatting the links into buttons -->
         <div class="subheader">
             <ul>
-                <li>About Me</li>
-                <li>Relevant Courses</li>
-                <li>Work Samples</li>
-                <li>Achievements & Awards</li>
+                <li><a href="#about_me">About Me</a></li>
+                <li><a href="#courses">Relevant Courses</a></li>
+                <li><a href="#work">Work Samples</a></li>
+                <li><a href="#smert">Achievements & Awards</a></li>
                 <li><a href="#profiles">Profiles </a></li>
             </ul>
         </div>
@@ -26,39 +29,69 @@
         <div class="main">
             <h2>About Me</h2>
             <div id="about_me">
-                <img src="Images/_DSC4206.jpg" height=200 alt="A picture of me by a tree">
-                <p>The blah blah blah about why you'd want to work with me</p>
+                <img src="Images/_DSC4206.jpg" height=300 alt="A picture of me by a tree">
+                <p> Hi, I'm Alyson. I enjoy Star Trek (The Next Generation), Doctor Who, and running. I'm currently studying mathematics at Florida Gulf Coast University where I hope to do research over the summer in graph theory. I discovered my fascination with the challenging world of mathematics only a few years ago, when I took Calculus III and Differential Equations. So far, my classes are difficult and rigorous, but I love learning! <br><br>
+                    
+                Right now, I work at a bookkeeping and accounting company in my hometown of Naples, Florida. So far I've learned how to effectively use financial software such as Quickbooks and Xero to manage business accounts. Before this job, I worked as a Sales Associate at a retail store called Fit2Run where I shared my passion for running by outfitting customers with the right products. Although I thoroughly enjoyed helping all kinds of runners, I've found that I love the organization of working behind a desk with a small team of coworkers. Each client that I help manage is unique, so I'm constantly learning. 
+                </p>
             </div>
 
             <h2>Relevant Courses</h2>
             <div id="courses">
                 <ul>
                     <li>Linear Algebra</li>
+                    <li>Calculus III</li>
+                    <li>Differential Equations</li>
+                    <li>Discrete Math</li>
+                    <li>General Physics</li>
+                </ul>
+                 <ul>
                     <li>Graph Theory</li>
                     <li>Operations Research</li>
                     <li>Applied Statistics</li>
-                </ul>
-                 <ul>
-                    <li>Course</li>
-                    <li>Course</li>
-                    <li>Course</li>
-                    <li>Course</li>
+                    <li>Computational Technology</li>
                 </ul>
             </div>
             
             <h2>Work Samples</h2>
             <div id="work">
-                <p>Yay work things</p>
+              <!--    <p> I'm a junior at FGCU, so I'm just beginning my upper level major classes and projects. The following are some samples of work that I have done for my various non-major courses.</p>
+                
+              <button class="accordion">Honors Foundations of Civic Engagement</button>
+                <div class="panel">
+                    <p>Description of this project and the link</p>
+                </div>
+                <button class="accordion">Introduction to Literature</button>
+                <div class="panel">
+                    <p>Description of this project and the link</p>
+                </div>
+                <button class="accordion">Creative Writing</button>
+                <div class="panel">
+                    <p>Description of this project and the link</p>
+                </div>
+                <button class="accordion"> Graph Theory Honors Contract</button>
+                <div class="panel">
+                    <p>Description of this project and the link</p>
+                </div> -->
+            
+                    
+                These are projects that I have completed for my non-major courses such as <a href="https://drive.google.com/open?id=1ZxgTnomfM6eMG3iBSuLyi-TSQ3eRzN4M" target="_blank">Honors Foundations of Civic Engagement</a>, <a href="https://drive.google.com/open?id=1Jn000t3ST0Dvk6qJEnZ7WC4y74lkoaJe" target="_blank">Introduction to Literature</a>, <a href="https://drive.google.com/open?id=1jl6ktHf0C3cdAVTGK0ohHlp7SQqUoEMZ" target="_blank">Creative Writing</a>, and <a href="https://drive.google.com/open?id=1pj5F-ZcEbIclmdrC7XvyL25t4-Oi-Mdo" target="_blank">Graph Theory</a>.
             </div>
             
             <h2>Achievements and Awards</h2>
             <div id="smert">
-                <p>smert</p>
+                <p>President's List, Florida Academic Scholars Award, President's Gold Scholarship<br><br>
+                I have run two half marathons so far and plan on tackling a full marathon in the near future. I have yet to complete any mud runs or obstacle runs, but I am excited to do so at some point.</p>
             </div>
             
             <h2>Profiles</h2>
             <div id="profiles">
-                <p>probably like codecademy</p>
+                <a href="https://www.codecademy.com/albaum" target="_blank"><img src="Images/codecademy_logo.svg" alt="Codecademy logo" ></a> <br><br>
+                <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="alyson-baumgardner-221207162">
+                    <a class="LI-simple-link" href='https://www.linkedin.com/in/alyson-baumgardner-221207162?trk=profile-badge'>Alyson Baumgardner</a>
+                    <!-- Obtained from LinkedIn to display profile badge that links to my LinkedIn profile -->
+                </div>
+                <br>
             </div>
         </div>
     </div>
