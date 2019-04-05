@@ -57,6 +57,17 @@ a {
     padding: 1px 20px;
 }
 
+.face {
+    fill: gold;
+}
+
+.mouth {
+    fill: none;
+    stroke: #000;
+    stroke-width: 6px;
+    stroke-linecap: round;
+}
+
 #courses {
     display: flex;
     width: 40%;
