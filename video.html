@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+  <title>Alyson Baumgardner</title>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Alyson Baumgardner</h1>
+<!--For jumping to specific parts of the page and formatting the links into buttons -->
+        <div class="subheader">
+            <ul>
+                <li><a href="index.html" onclick="play()">About Me</a></li>
+                <li><a href="index.html" onclick="play()">Relevant Courses</a></li>
+                <li><a href="index.html" onclick="play()">Work Samples</a></li>
+                <li><a href="index.html" onclick="play()">Achievements & Awards</a></li>
+                <li><a href="index.html" onclick="play()">Profiles </a></li>
+            </ul>
+        </div>
+    </header>
+    <audio id="audio">
+          <source src="blop.mp3" type="audio/mpeg">
+          <source src="blop.wav" type="audio/wav">
+          Your browser does not support the audio element
+    </audio>
+    <script>
+            function play() {
+            var audio = document.getElementById("audio");
+            audio.play();
+            }
+    </script>
+    <video height=95% width=95% controls>
+    <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <a href="https://drive.google.com/open?id=1ZxgTnomfM6eMG3iBSuLyi-TSQ3eRzN4M" target="_blank" onclick="play()">Honors Foundations of Civic Engagement</a>
+</body>
+</html>

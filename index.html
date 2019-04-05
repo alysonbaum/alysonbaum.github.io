@@ -14,11 +14,11 @@
 <!--For jumping to specific parts of the page and formatting the links into buttons -->
         <div class="subheader">
             <ul>
-                <li><a href="#about_me">About Me</a></li>
-                <li><a href="#courses">Relevant Courses</a></li>
-                <li><a href="#work">Work Samples</a></li>
-                <li><a href="#smert">Achievements & Awards</a></li>
-                <li><a href="#profiles">Profiles </a></li>
+                <li><a href="#about_me" onclick="play()">About Me</a></li>
+                <li><a href="#courses" onclick="play()">Relevant Courses</a></li>
+                <li><a href="#work" onclick="play()">Work Samples</a></li>
+                <li><a href="#smert" onclick="play()">Achievements & Awards</a></li>
+                <li><a href="#profiles" onclick="play()">Profiles </a></li>
             </ul>
         </div>
     </header>
@@ -27,9 +27,38 @@
     <!--To delineate the main content, mostly to make the background a nice color-->
     <div class="container">
         <div class="main">
+            
+            <audio id="audio">
+                <source src="blop.mp3" type="audio/mpeg">
+                <source src="blop.wav" type="audio/wav">
+                Your browser does not support the audio element
+            </audio>
+            <script>
+                function play() {
+                var audio = document.getElementById("audio");
+                audio.play();
+                }
+            </script>
+            
+            
             <h2>About Me</h2>
+             <div>
+                <img id="tree" src="Images/alyson.jpg" height="0" width="0" alt="A picture of me by a tree">
+            </div>
             <div id="about_me">
-                <img src="Images/alyson.jpg" height=300 alt="A picture of me by a tree">
+                          <div>
+                <canvas id="myCanvas" width="300" height="500" style="border:1px solid #d3d3d3;">
+                Your browser does not support the HTML5 canvas tag.
+                </canvas>
+                <script>
+                    window.onload = function(){
+                    var canvas = document.getElementById("myCanvas");
+                    var ctx = canvas.getContext("2d");
+                    var img = document.getElementById("tree");
+                   ctx.drawImage(img, 0.5, 0.5, 300, 500);
+                    }
+                </script>
+            </div>
                 <p> Hi, I'm Alyson. I enjoy Star Trek (The Next Generation), Doctor Who, and running. I'm currently studying mathematics at Florida Gulf Coast University where I hope to do research over the summer in graph theory. I discovered my fascination with the challenging world of mathematics only a few years ago, when I took Calculus III and Differential Equations. So far, my classes are difficult and rigorous, but I love learning! <br><br>
                     
                 Right now, I work at a bookkeeping and accounting company in my hometown of Naples, Florida. So far I've learned how to effectively use financial software such as Quickbooks and Xero to manage business accounts. Before this job, I worked as a Sales Associate at a retail store called Fit2Run where I shared my passion for running by outfitting customers with the right products. Although I thoroughly enjoyed helping all kinds of runners, I've found that I love the organization of working behind a desk with a small team of coworkers. Each client that I help manage is unique, so I'm constantly learning. 
@@ -53,7 +82,7 @@
                 </ul>
             </div>
             
-            <h2>Work Samples</h2>
+            <h2>Past Projects</h2>
             <div id="work">
               <!--    <p> I'm a junior at FGCU, so I'm just beginning my upper level major classes and projects. The following are some samples of work that I have done for my various non-major courses.</p>
                 
@@ -75,7 +104,10 @@
                 </div> -->
             
                     
-                These are projects that I have completed for my non-major courses such as <a href="https://drive.google.com/open?id=1ZxgTnomfM6eMG3iBSuLyi-TSQ3eRzN4M" target="_blank">Honors Foundations of Civic Engagement</a>, <a href="https://drive.google.com/open?id=1Jn000t3ST0Dvk6qJEnZ7WC4y74lkoaJe" target="_blank">Introduction to Literature</a>, <a href="https://drive.google.com/open?id=1jl6ktHf0C3cdAVTGK0ohHlp7SQqUoEMZ" target="_blank">Creative Writing</a>, and <a href="https://drive.google.com/open?id=1pj5F-ZcEbIclmdrC7XvyL25t4-Oi-Mdo" target="_blank">Graph Theory</a>.
+                These are projects that I have completed for my courses such as <a href="https://drive.google.com/open?id=1Jn000t3ST0Dvk6qJEnZ7WC4y74lkoaJe" target="_blank">Introduction to Literature</a>, <a href="https://drive.google.com/open?id=1jl6ktHf0C3cdAVTGK0ohHlp7SQqUoEMZ" target="_blank">Creative Writing</a>, and <a href="https://drive.google.com/open?id=1pj5F-ZcEbIclmdrC7XvyL25t4-Oi-Mdo" target="_blank">Graph Theory</a>. <br>
+                <a href="fieldReport.pdf" target="_blank">Computer Science Fields Report</a> <br>
+                <a href="video.html" target="_blank" onclick="play()">Honors Foundations of Civic Engagement</a>
+                
             </div>
             
             <h2>Achievements and Awards</h2>
@@ -86,12 +118,18 @@
             
             <h2>Profiles</h2>
             <div id="profiles">
-                <a href="https://www.codecademy.com/albaum" target="_blank"><img src="Images/codecademy_logo.svg" alt="Codecademy logo" ></a> <br><br>
+                <a href="https://www.codecademy.com/albaum" target="_blank" onclick="play()"><img src="Images/codecademy_logo.svg" alt="Codecademy logo" ></a> <br><br>
                 <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="alyson-baumgardner-221207162">
                     <a class="LI-simple-link" href='https://www.linkedin.com/in/alyson-baumgardner-221207162?trk=profile-badge'>Alyson Baumgardner</a>
                     <!-- Obtained from LinkedIn to display profile badge that links to my LinkedIn profile -->
                 </div>
-                <br>
+                <svg class="smiley" width="256" height="256" viewBox="0 0 256 256">
+                    <circle class="face" cx="128" cy="128" r="120" />
+                    <circle class="left_eye" cx="100" cy="104" r="12" />
+                    <circle class="left_eye" cx="156" cy="104" r="12" />
+                    <path class="mouth" d="M100,160 Q128,190 156,160" />
+                    Sorry, your browser does not support inline SVG.
+                </svg>
             </div>
         </div>
     </div>
