@@ -1,0 +1,52 @@
+<!doctype html>
+<!-- Alyson Baumgardner, page for usability assignment -->
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+  <title>Alyson Baumgardner</title>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Alyson Baumgardner</h1>
+<!--For jumping to specific parts of the page and formatting the links into buttons -->
+        <div class="subheader">
+            <ul>
+                <li><a href="index.html" onclick="play()">About Me</a></li>
+                <li><a href="index.html" onclick="play()">Relevant Courses</a></li>
+                <li><a href="index.html" onclick="play()">Work Samples</a></li>
+                <li><a href="index.html" onclick="play()">Achievements & Awards</a></li>
+                <li><a href="index.html" onclick="play()">Profiles </a></li>
+                <li><a href="usability.html" onclick="play()">Usability</a></li>
+            </ul>
+        </div>
+    </header>
+    <audio id="audio">
+          <source src="blop.mp3" type="audio/mpeg">
+          <source src="blop.wav" type="audio/wav">
+          Your browser does not support the audio element
+    </audio>
+    <script>
+            function play() {
+            var audio = document.getElementById("audio");
+            audio.play();
+            }
+    </script>
+    <div class="container">
+        <div class="main">
+    <h2>Usability</h2>
+    <p>There are certain functions of this website that have been designed specifically for ease of use for all people.</p> 
+    <ul>
+        <li>The main images have alternate text should the user be unable to view them for any reason.</li>
+        <li>Most navigation links open within the same window, so the back button will work to return to any given page.</li>
+        <li>Links to outside sources such as YouTube, LinkedIn, or Google Drive (for some work samples) will open in a new tab so that the website page is not lost.</li>
+        <li>The video will resize itself according to the viewing window, so should the user prefer to watch the video on a portable device in landscape mode, the video will fit the window for ease of viewing.</li>
+        <li>All text colors are set to contrast the background so that visually impaired readers can distinguish between the text and background.</li>
+        <li>When hovered over, every link will become highlighted with light pink and will become underlined so that every user can easily see tell what might navigate them away from the current position.</li>
+    </ul>
+    </div>
+    </div>
+    
+    
+</body>
+</html>
