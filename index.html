@@ -20,6 +20,7 @@
                 <li><a href="#smert" onclick="play()">Achievements & Awards</a></li>
                 <li><a href="#profiles" onclick="play()">Profiles </a></li>
                 <li><a href="usability.html" onclick="play()">Usability</a></li>
+                <li><a href="cipher.html" onclick="play()">Caesar Cipher</a></li>
             </ul>
         </div>
     </header>
@@ -34,14 +35,7 @@
                 <source src="blop.wav" type="audio/wav">
                 Your browser does not support the audio element
             </audio>
-            <script>
-                function play() {
-                var audio = document.getElementById("audio");
-                audio.play();
-                }
-            </script>
-            
-            
+    
             <h2>About Me</h2>
              <div>
                 <img id="tree" src="Images/alyson.jpg" height="0" width="0" alt="A picture of me by a tree">
@@ -51,18 +45,11 @@
                 <canvas id="myCanvas" width="300" height="500" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.
                 </canvas>
-                <script>
-                    window.onload = function(){
-                    var canvas = document.getElementById("myCanvas");
-                    var ctx = canvas.getContext("2d");
-                    var img = document.getElementById("tree");
-                   ctx.drawImage(img, 0.5, 0.5, 300, 500);
-                    }
-                </script>
+
             </div>
                 <p> Hi, I'm Alyson. I enjoy Star Trek (The Next Generation), Doctor Who, and running. I'm currently studying mathematics at Florida Gulf Coast University where I hope to do research over the summer in graph theory. I discovered my fascination with the challenging world of mathematics only a few years ago, when I took Calculus III and Differential Equations. So far, my classes are difficult and rigorous, but I love learning! <br><br>
                     
-                Right now, I work at a bookkeeping and accounting company in my hometown of Naples, Florida. So far I've learned how to effectively use financial software such as Quickbooks and Xero to manage business accounts. Before this job, I worked as a Sales Associate at a retail store called Fit2Run where I shared my passion for running by outfitting customers with the right products. Although I thoroughly enjoyed helping all kinds of runners, I've found that I love the organization of working behind a desk with a small team of coworkers. Each client that I help manage is unique, so I'm constantly learning. 
+                Right now, I work at a bookkeeping and accounting company in my hometown of Naples, Florida. So far I've learned how to effectively use financial software such as QuickBooks and Xero to manage business accounts. Before this job, I worked as a Sales Associate at a retail store called Fit2Run where I shared my passion for running by outfitting customers with the right products. Although I thoroughly enjoyed helping all kinds of runners, I've found that I love the organization of working behind a desk with a small team of coworkers. Each client that I help manage is unique, so I'm constantly learning. 
                 </p>
             </div>
 
@@ -105,9 +92,9 @@
                 </div> -->
             
                     
-                These are projects that I have completed for my courses such as <a href="https://drive.google.com/open?id=1Jn000t3ST0Dvk6qJEnZ7WC4y74lkoaJe" target="_blank">Introduction to Literature</a>, <a href="https://drive.google.com/open?id=1jl6ktHf0C3cdAVTGK0ohHlp7SQqUoEMZ" target="_blank">Creative Writing</a>, and <a href="https://drive.google.com/open?id=1pj5F-ZcEbIclmdrC7XvyL25t4-Oi-Mdo" target="_blank">Graph Theory</a>. <br>
-                <a href="fieldReport.pdf" target="_blank">Computer Science Fields Report</a> <br>
-                <a href="video.html" onclick="play()">Honors Foundations of Civic Engagement</a>
+                These are projects that I have completed for my courses: <a href="https://drive.google.com/open?id=1Jn000t3ST0Dvk6qJEnZ7WC4y74lkoaJe" target="_blank">Introduction to Literature</a>, <a href="https://drive.google.com/open?id=1jl6ktHf0C3cdAVTGK0ohHlp7SQqUoEMZ" target="_blank">Creative Writing</a>, <a href="https://drive.google.com/open?id=1pj5F-ZcEbIclmdrC7XvyL25t4-Oi-Mdo" target="_blank">Graph Theory</a>,
+                <a href="fieldReport.pdf" target="_blank">Computer Science Fields Report</a>, <a href="https://scratch.mit.edu/projects/283252535/" target="_blank">Computer Science Scratch Project</a>,
+                <a href="video.html" onclick="play()">Honors Foundations of Civic Engagement.</a>
                 
             </div>
             
@@ -137,5 +124,14 @@
             </div>
         </div>
     </div>
+    <script>
+        window.onload = function(){
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            var img = document.getElementById("tree");
+            ctx.drawImage(img, 0.5, 0.5, 300, 500);
+        }
+    </script>
+    <script src="main.js"></script>
 </body>
 </html>

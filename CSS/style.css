@@ -124,4 +124,131 @@ a:active {
     border-style: solid;
     border-width: 12px;
     border-color: #d3d3d3;
+=======
+/*Alyson Baumgardner, CSS styling sheet */
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: #AED581;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 1px;
+}
+
+header li {
+    display: inline;
+    padding-left: 20px;
+}
+
+video {
+    height: 90vh;
+    width: 99vw;
+}
+
+a:hover {
+    color: lightcoral;
+    text-decoration: underline !important;
+}
+
+a:visited {
+    color: chocolate
+}
+
+a:link {
+    color: #134f13;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/* To create buttons for the links that look the same before and after they are clicked */
+.subheader a:link, a:visited {
+  background-color: whitesmoke;
+  color: #134f13;
+  padding: 5px 5px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Buttons for the links that change color when the mouse is hovering over the button or when clicking the button */
+.subheader a:hover, a:active {
+  background-color: lightpink;
+  color: black;
+}
+
+.subheader {
+    background-color: #7DA453;
+}
+
+.subheader ul {
+    margin-top: 5px;
+    padding: 7px;
+}
+
+.container {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.main {
+    background-color: #E6E6E6;
+    text-align: center;
+    padding: 1px 20px;
+}
+
+.face {
+    fill: gold;
+}
+
+.mouth {
+    fill: none;
+    stroke: #000;
+    stroke-width: 6px;
+    stroke-linecap: round;
+}
+
+#courses {
+    display: flex;
+    width: 40%;
+    margin: auto;
+}
+
+#courses ul {
+    margin: auto;
+    padding: 0px;
+}
+
+#courses li {
+    text-align: left;
+}
+
+/* to show picture left and text right */
+#about_me {
+    display: flex;
+}
+
+#about_me p {
+    padding: 10px;
+}
+
+#profiles svg {
+    align-content: center;
+}
+
+/* #myCanvas {
+    width:300px;
+    height:500px;
+    border-style: solid;
+    border-width: 12px;
+    border-color: #d3d3d3;
 } */

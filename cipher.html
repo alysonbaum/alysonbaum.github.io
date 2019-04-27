@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Alyson Baumgardner, page for usability assignment -->
+<!-- Alyson Baumgardner, page for Ceasar Cipher -->
 <html lang=en>
 <head>
   <meta charset=utf-8>
@@ -35,17 +35,12 @@
     </script>
     <div class="container">
         <div class="main">
-    <h2>Usability</h2>
-    <p>There are certain functions of this website that have been designed specifically for ease of use for all people.</p> 
-    <ul>
-        <li>The main images have alternate text should the user be unable to view them for any reason.</li>
-        <li>Most navigation links open within the same window, so the back button will work to return to any given page.</li>
-        <li>Links to outside sources such as YouTube, LinkedIn, or Google Drive (for some work samples) will open in a new tab so that the website page is not lost.</li>
-        <li>The video will resize itself according to the viewing window, so should the user prefer to watch the video on a portable device in landscape mode, the video will fit the window for ease of viewing.</li>
-        <li>All text colors are set to contrast the background so that visually impaired readers can distinguish between the text and background.</li>
-        <li>When hovered over, every link will become highlighted with light pink and will become underlined so that every user can easily see tell what might navigate them away from the current position.</li>
-    </ul>
-    </div>
+            <h2>Caesar Cipher</h2>
+            <label>Input plain text:</label>
+            <input type="text" id="chinput" placeholder="plain text">
+            <button onclick="cipher(3)">Submit</button>
+            <p id="output">Results here</p>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
